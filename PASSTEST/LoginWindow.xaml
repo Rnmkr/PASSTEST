@@ -1,0 +1,16 @@
+﻿<Window x:Class="PASSTEST.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PASSTEST"
+        mc:Ignorable="d"
+        Title="Ingreso de Usuario" Height="148" Width="296" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox Name="TextBoxLegajo" MaxLength="6" KeyDown="OnKeyDownHandler" Margin="106,12,0,0" VerticalAlignment="Top" Height="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="128"/>
+        <PasswordBox Name="PasswordBoxPassword" MaxLength="8" KeyDown="OnKeyDownHandler" Margin="106,41,0,0" VerticalAlignment="Top" Height="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="128"/>
+        <Label Content="Legajo" Margin="29,12,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="72" Height="24" VerticalAlignment="Top" Padding="1"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="29,41,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="24" HorizontalContentAlignment="Center" Padding="1" Width="72"/>
+        <Button Name="ButtonLogin" Content="INGRESAR" HorizontalAlignment="Left" Margin="106,0,0,10" VerticalAlignment="Bottom" Click="ButtonLogin_Click" Height="24" Width="78" Padding="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+    </Grid>
+</Window>
